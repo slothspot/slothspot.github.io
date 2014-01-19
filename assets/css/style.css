@@ -104,18 +104,28 @@ h3 {
 .img-middle { vertical-align: middle; }
 .nopadding { padding: 0; }
 .nounderline { text-decoration: underline; }
+.inlinetags {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+  padding-left: 0.5em;
+}
+
+.tags-and-numbers {
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
 
 
 
 /*** Structure ***/
 #page {
-	width: 500px;
+	width: 800px;
 	margin: 0 auto;
 	position: relative;
 }
 
 #header {
-	width: 500px;
+	width: 800px;
 	margin: 40px auto 50px auto;
 }
 #header h1 {
@@ -125,9 +135,12 @@ h3 {
 #header h1 a {
 	border: none;
 }
+#header .description {
+  font-style: italic;
+}
 
 #footer {
-	width: 500px;
+	width: 800px;
 	margin: 50px auto 20px auto;
 	padding-top: 10px;
 	font-size: 0.85em;
@@ -135,27 +148,28 @@ h3 {
 }
 
 #content {
-	width: 500px;
+	width: 800px;
 	margin: 0 auto;
 }
 
 #sidebar {
 	position: absolute;
 	text-align: right;
-	width: 160px;
+	width: 180px;
 	top: 0;
-	left: -240px;
+	left: -200px;
 }
 
 #sidebar li {
 	list-style: none;
 	margin: 2px 0;
+  font-style: italic;
 }
 
 #sidebar a {
 	border: none;
 	font-family: "Helvetica Neue", "Helvetica", serif;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	padding: 2px 4px;
 }
 
@@ -167,7 +181,7 @@ article {
 }
 
 article h1 {
-	font-size: 17px;
+	font-size: 1.3em;
 	margin: 0 0 10px 0;
 }
 article h1 a {
@@ -202,7 +216,9 @@ img.center {
 	text-align: center;
 	margin: 0 auto 1em auto;
 }
-
+.highlight {
+  margin-bottom: 10px;
+}
 
 
 /*** Pagination ***/
