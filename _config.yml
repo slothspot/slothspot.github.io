@@ -1,0 +1,9 @@
+name: Dmitry's backlog
+author: Dmitry Melnichenko
+description: Programming related things mostly
+url: http://dmitrym.name
+permalink: /:year/:month/:day/:title/
+paginate: 10
+markdown: redcarpet
+pygments: true
+encoding: UTF-8
