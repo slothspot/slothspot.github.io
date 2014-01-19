@@ -1,5 +1,5 @@
 ---
-title: Java API Design Chacklist
+title: Java API Design Checklist
 tags:
 - java
 - design
