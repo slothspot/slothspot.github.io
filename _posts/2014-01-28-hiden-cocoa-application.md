@@ -27,8 +27,12 @@ tags:
 Поиск информации о том, как добиться желаемоего привел к следующему:
 нам нужно фоновое приложение в терминах [Launch Services][ls]. Для
 достижения этой цели нам понадобиться модифицировать Info.plist
-приложения, добавив туда ключ *LSUIElement* со значением *1*. За
-подробностями и дополнительной информацией обратите внимание на информацию,
+приложения, добавив туда ключ *LSUIElement* со значением *true*:
+{% highlight xml %}
+  <key>LSUIElement</key>
+  <true/>
+{% endhighlight %}
+За подробностями и дополнительной информацией обратите внимание на информацию,
 приведенную по [ссылке][lsk].
 
 [ls]: https://developer.apple.com/library/mac/documentation/Carbon/Conceptual/LaunchServicesConcepts/LSCIntro/LSCIntro.html "Launch Services Introduction"
