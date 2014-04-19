@@ -6,7 +6,7 @@ layout: default
 
 I'm a software engineer living in Kiev, Ukraine and currently working at [Samsung Electronics][samsung].
 I've participated in development of online and mobile payment systems based on [NSMEP][nsmep] for some time.
-Have expirience in embedded and middleware development for Linux-based systems. Now I'm interested in
+Have experience in embedded and middleware development for Linux-based systems. Now I'm interested in
 distributed web-services and Android platform.
 
 [samsung]: http://samsung.com
