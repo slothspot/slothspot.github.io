@@ -1,8 +1,5 @@
 ---
 title: Java API Design Checklist
-tags:
-- java
-- design
 external-url: http://theamiableapi.com/2012/01/16/java-api-design-checklist/
 layout: post
 ---

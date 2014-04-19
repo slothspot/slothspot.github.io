@@ -1,92 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width">
+{% include head.html %}
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+<body class="theme-base-09">
 
-  <link href="/assets/css/style.css" rel="stylesheet" />
-  <link href="/assets/css/colors-dark.css" rel="stylesheet" />
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  {% include sidebar.html %}
 
-</head>
-
-<body>
-
-
-
-  <header id="header">
-    <h1><a href="/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
-    <p>{{ site.description }}</p>
-  </header>
-
-
-
-  <div id="page">
-
-
-
-    <div id="sidebar">
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/archives">Archive</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contribution">Contribution</a></li>
-          <li><a href="/feed.xml">RSS Feed</a></li>
-        </ul>
-        {% if site.tags.size > 0 %}
-          <div class="tags-and-numbers">
-            <table class="tags-and-numbers-table">
-              {% for tag in site.tags %}
-                {% assign tag_name = tag | first %}
-                {% assign tag_posts = site.tags[tag_name] %}
-                <tr>
-                  <td class="tag-name">
-                    <a href="/tags.html#{{tag | first | cgi_encode}}">{{ tag_name }}</a>
-                  </td>
-                  <td class="tag-count">{{ tag_posts.size }}</td>
-                </tr>
-              {% endfor %}
-              </tr>
-            </table>
-          </div>
-        {% endif %}
-      </nav>
-    </div>
-
-
-
-    <div id="content">
-      {{ content }}
-    </div>
-
-
-
+  <div class="content container">
+    {{ content }}
   </div>
-
-
-
-  <footer id="footer">
-    <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }} <a href="mailto:dmitry@dmitrym.name" class="fa fa-envelope"> {{ site.author }}</a>. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a></p>
-  </footer>
-
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
-    });
-  </script>
-
 
   <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23553352 = new Ya.Metrika({id:23553352, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23553352" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 
