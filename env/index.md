@@ -31,6 +31,18 @@ cat bfo.usb > /dev/sdc
 $ sudo yum install kmod-wl
 {% endhighlight %}
 
+#### Power management
+
+В качестве видеокарты в моем ноутбуке Samsung NP700Z5A используется AMD Radeon HD6750M. Драйвер для карты -
+[radeon](http://wiki.x.org/wiki/radeon/) из репозитория дистрибутива. Для включения энергосбережения для видео
+необходимо сделать следующее:
+
+* Добавить *radeon.dpm=1* в параметры загрузки ядра в файле /etc/default/grub в переменную *GRUB\_CMDLINE\_LINUX*
+* Перегенерировать grub.cfg:
+{% highlight bash %}
+$ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+{% endhighlight %}
+
 #### Командная оболочка
 
 В качестве оболочки используется [Zsh](http://www.zsh.org/). Для ее установки выполнить следующие команды:
